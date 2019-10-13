@@ -1,0 +1,69 @@
+
+
+:root{
+    --default-spacing: 10px;
+    --default-blur : 0px;
+    --default-base-color : #000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.controls{
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image{
+    background: var(--default-base-color);
+    padding: var(--default-spacing);
+    margin: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    filter: blur(var(--default-blur));
+  }
+
+
+  @media screen and (max-width: 728px){
+    .controls{
+        margin: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .controls div{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  }
